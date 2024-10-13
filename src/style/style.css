@@ -32,10 +32,10 @@ button[type=submit]:hover {
     padding-bottom: 0rem;
     padding-left: 0rem;
     padding-right: 0rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://media-cldnry.s-nbcnews.com/image/upload/streams/2014/February/140203/2D11495359-140203-manufacturing-1129.jpg);
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://i.ibb.co/wYhk4kz/image-1.png); */
+    min-height: 200vh;
+    background-attachment: scroll;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -46,6 +46,38 @@ button[type=submit]:hover {
 
 div[data-testid="stHorizontalBlock"] > div:nth-of-type(2) {
     background-color: #0E1117;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+div[data-testid="stHorizontalBlock"] > div:nth-of-type(1) {
+    background-color: #0E1117;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://i.ibb.co/wYhk4kz/image-1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 200vh;
+    text-align: left;
+    justify-content: left;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+div[data-testid="stHorizontalBlock"] > div:nth-of-type(3) {
+    background-color: #0E1117;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://i.ibb.co/wYhk4kz/image-1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 200vh;
     text-align: center;
     justify-content: center;
     padding-top: 0rem;
@@ -69,4 +101,12 @@ div[data-testid="stImage"] {
 
 .stTabs [aria-selected="true"] {
     text-align: center;
+}
+
+div.stLinkButton {
+    color: f44336;
+    padding: 14px 25px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
 }
