@@ -1,0 +1,72 @@
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea {
+    height: 12rem;
+}
+
+button[type=submit] {
+    background-color: #1e40af;
+    color: #dbeafe;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+button[type=submit]:hover {
+    background-color: #1d4ed8;
+}
+
+.block-container {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://media-cldnry.s-nbcnews.com/image/upload/streams/2014/February/140203/2D11495359-140203-manufacturing-1129.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+
+div[data-testid="stHorizontalBlock"] > div:nth-of-type(2) {
+    background-color: #0E1117;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+div[data-testid="stImage"] {
+    justify-content: center;
+    background-attachment:fixed;
+}
+
+.stTabs [data-baseweb="tab-list"] {
+    justify-content: center;
+}
+
+.stTabs [data-baseweb="tab"] {
+    text-align: center;
+}
+
+.stTabs [aria-selected="true"] {
+    text-align: center;
+}
