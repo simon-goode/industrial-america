@@ -7,6 +7,7 @@ import geopandas as gpd
 import plotly.figure_factory as ff
 
 data = pd.read_csv("src/data/countypres_2000-2020.csv")
+figs = {}
 
 rust_belt = ['PA', 'OH', 'MI', 'WI']
 rust_belt_names = ['Pennsylvania', 'Ohio', 'Michigan', 'Wisconsin']
@@ -37,53 +38,46 @@ geojson_path = "https://gist.githubusercontent.com/sdwfrost/d1c73f91dd9d175998ed
 
 geo_data = requests.get(geojson_path).json()
 
-def plot_vote_margin_diff(year):
-    """
-    Generate a Plotly choropleth map showing the change in percentage vote margin 
-    for DEMOCRATS vs REPUBLICANS between the given election year and the previous one.
+def plot_pres_vote_margin_diff():
+    if len(figs) > 0:
+        return
     
-    Args:
-        year (int): The election year to analyze (must be 2004, 2008, 2012, 2016, or 2020).
-    
-    Returns:
-        fig (plotly.graph_objs._figure.Figure): The generated Plotly figure.
-    """
-    # Ensure the year is valid
-    if year not in [2004, 2008, 2012, 2016, 2020]:
-        raise ValueError("Invalid year. Choose from 2004, 2008, 2012, 2016, or 2020.")
+    for year in [2004, 2008, 2012, 2016, 2020]:
 
-    # Calculate the previous election year
-    previous_year = year - 4
+        # Calculate the previous election year
+        previous_year = year - 4
 
-    current_margin = margin_df[margin_df['year'] == year]
-    previous_margin = margin_df[margin_df['year'] == previous_year]
+        current_margin = margin_df[margin_df['year'] == year]
+        previous_margin = margin_df[margin_df['year'] == previous_year]
 
-    merged_margins = pd.merge(
-        current_margin,
-        previous_margin,
-        on='county_fips',
-        suffixes=('_current','_previous')
-    )
-    merged_margins['margin_diff'] = (merged_margins['percentage_margin_current'] - merged_margins['percentage_margin_previous']) * 100
+        merged_margins = pd.merge(
+            current_margin,
+            previous_margin,
+            on='county_fips',
+            suffixes=('_current','_previous')
+        )
+        merged_margins['margin_diff'] = (merged_margins['percentage_margin_current'] - merged_margins['percentage_margin_previous']) * 100
 
-    fig = px.choropleth(merged_margins,
-                    geojson=geo_data,
-                    locations='county_fips',
-                    color='margin_diff',
-                    color_continuous_scale='RdBu',
-                    featureidkey="properties.GEOID",
-                    range_color=(-30,30),
-                    scope='usa',
-                    labels={'margin_diff': ''},
-                    hover_name='county_name_current'
-                    )
-    fig.update_geos(fitbounds="locations",
-                    visible=False)
-    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
-    fig.update_layout(paper_bgcolor="#0E1117")
-    fig.update_layout(geo_bgcolor="#0E1117")
-    fig.update_xaxes(overwrite=True, fixedrange=True)
-    fig.update_yaxes(overwrite=True, fixedrange=True)
-    fig.update_layout(dragmode=False)
+        fig = px.choropleth(merged_margins,
+                        geojson=geo_data,
+                        locations='county_fips',
+                        color='margin_diff',
+                        color_continuous_scale='RdBu',
+                        featureidkey="properties.GEOID",
+                        range_color=(-30,30),
+                        scope='usa',
+                        labels={'margin_diff': ''},
+                        hover_name='county_name_current'
+                        )
+        fig.update_geos(fitbounds="locations",
+                        visible=False)
+        fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+        fig.update_layout(paper_bgcolor="#0E1117")
+        fig.update_layout(geo_bgcolor="#0E1117")
+        fig.update_xaxes(overwrite=True, fixedrange=True)
+        fig.update_yaxes(overwrite=True, fixedrange=True)
+        fig.update_layout(dragmode=False)
+        figs.update({year: fig})
 
-    return fig
+def get_vote_margin_diff(year):
+    return figs[year]
