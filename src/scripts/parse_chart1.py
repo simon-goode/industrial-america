@@ -80,4 +80,6 @@ def plot_pres_vote_margin_diff():
         figs.update({year: fig})
 
 def get_vote_margin_diff(year):
+    if len(figs) == 0:
+        plot_pres_vote_margin_diff()
     return figs[year]
