@@ -8,9 +8,8 @@ Highlighting trends in the Rust Belt and the effect of recent industrial policy 
 ## data sources
 [MIT Election Lab](https://electionlab.mit.edu/data)  
 [St. Louis FRED](https://fred.stlouisfed.org/)  
-Various GeoJSON GitHub contributors:  
-- [County Borders](https://gist.github.com/sdwfrost/d1c73f91dd9d175998ed166eb216994a)  
-- [State Borders](https://github.com/PublicaMundi/MappingAPI/blob/master/data/geojson/us-states.json)  
+[County Borders GeoJSON](https://gist.github.com/sdwfrost/d1c73f91dd9d175998ed166eb216994a)  
+[State Borders GeoJSON](https://github.com/PublicaMundi/MappingAPI/blob/master/data/geojson/us-states.json)  
 
 ## image sources
 [Bloomberg](https://assets.bwbx.io/images/users/iqjWHBFdfxIU/incRfPugL59U/v1/-1x-1.webp)  
