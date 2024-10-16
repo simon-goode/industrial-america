@@ -45,7 +45,7 @@ with col2:
             [GitHub](https://github.com/simon-goode/industrial-america)
                     """)
         
-        st.markdown('### Report a bug, request a feature, or get in touch with me about anything:')
+        st.markdown('### Report a bug, fact check me, or just get in touch!:')
 
         contact_form = """
 <form action="https://formsubmit.co/8be1eda9ec4663debabb07417ecc12dc" method="POST" enctype="multipart/form-data">
