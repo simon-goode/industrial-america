@@ -22,15 +22,17 @@ with col2:
     # overview
     with tab1:
 
-        st.image("src/visuals/gm_hq.png", width=860)
-        st.markdown("""
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet convallis ligula. Pellentesque quis malesuada elit, ut varius arcu. Duis sollicitudin, nibh id sodales finibus, augue arcu venenatis sapien, in accumsan lectus magna id metus. Etiam rutrum dictum efficitur. Quisque mattis velit eu erat eleifend tempus. In nec varius massa. Nunc et rhoncus velit. Suspendisse fringilla turpis non nulla condimentum ullamcorper. Aliquam eu odio id quam luctus elementum.
-        """)
+        # st.image("src/visuals/rustbelt.png", width=750)
+        st.markdown('## Abandonment - Anger - Opportunity')
 
         # vote margin differential from previous election, by county
         year = st.slider("Year:", 2004, 2020, step=4)
         # st.image(f"src/visuals/chart1/{year}.png", use_column_width=True)
         st.plotly_chart(get_vote_margin_diff(year))
+
+        st.markdown("""
+                    This map shows the change in partisan vote differential, by county, since the previous election.
+        """)
 
         st.markdown('</div>', unsafe_allow_html=True)
 
