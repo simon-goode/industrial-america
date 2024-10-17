@@ -2,8 +2,10 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 from scripts.parse_chart1 import *
+from PIL import Image
 
-st.set_page_config(page_title='American Industry Project', layout="wide")
+im = Image.open("src/visuals/icon.png")
+st.set_page_config(page_title='American Industry Project', page_icon=im, layout="wide")
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -19,7 +21,7 @@ with col1:
 
 with col2:
     st.markdown('<div>', unsafe_allow_html=True)
-    tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["Overview", "Dismantled", "Michigan", "Ohio", "Pennsylvania", "Wisconsin", "About"])
+    tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["Overview", "Dismantled", "Michigan", "Ohio", "Pennsylvania", "Wisconsin", "About Me"])
 
     # overview
     with tab1:
