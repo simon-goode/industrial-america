@@ -81,7 +81,7 @@ with col2:
                     no ties to organized labor in the US, but I've seen overwhelming evidence that the populist dynamics dominating today's political discourse have
                     roots in the erosion of labor institutions and the collapse of the iron triangle in the Rust Belt, particularly in Michigan.
             
-            [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)&nbsp[GitHub](https://github.com/simon-goode/industrial-america)
+            [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)&nbsp;[GitHub](https://github.com/simon-goode/industrial-america)
                     """)
         
         st.markdown('### Report a bug, fact check me, or just get in touch!:')
