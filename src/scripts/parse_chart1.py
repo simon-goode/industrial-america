@@ -1,10 +1,9 @@
 import numpy as np
 import pandas as pd
 import plotly.express as px
-import geojson
 import requests
 import geopandas as gpd
-import plotly.figure_factory as ff
+pd.options.mode.chained_assignment = None  # default='warn'
 
 data = pd.read_csv("src/data/countypres_2000-2020.csv")
 figs = {}
@@ -50,6 +49,27 @@ def plot_pres_vote_margin_diff():
         current_margin = margin_df[margin_df['year'] == year]
         previous_margin = margin_df[margin_df['year'] == previous_year]
 
+        current_margin['percentage_margin_100'] = current_margin['percentage_margin'] * 100
+        fig = px.choropleth(current_margin,
+                            geojson=geo_data,
+                            locations='county_fips',
+                            color='percentage_margin_100',
+                            color_continuous_scale='RdBu',
+                            featureidkey="properties.GEOID",
+                            range_color=(-50,50),
+                            scope='usa',
+                            labels={'percentage_margin_100': ''},
+                            hover_name='county_name')
+        fig.update_geos(fitbounds="locations",
+                        visible=False)
+        fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+        fig.update_layout(paper_bgcolor="#0E1117")
+        fig.update_layout(geo_bgcolor="#0E1117")
+        fig.update_xaxes(overwrite=True, fixedrange=True)
+        fig.update_yaxes(overwrite=True, fixedrange=True)
+        fig.update_layout(dragmode=False)
+        figs.update({int(year/2): fig})
+
         merged_margins = pd.merge(
             current_margin,
             previous_margin,
@@ -83,3 +103,8 @@ def get_vote_margin_diff(year):
     if len(figs) == 0:
         plot_pres_vote_margin_diff()
     return figs[year]
+
+def get_vote_margin(year):
+    if len(figs) == 0:
+        plot_pres_vote_margin_diff()
+    return figs[int(year/2)]
