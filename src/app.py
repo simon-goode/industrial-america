@@ -61,7 +61,7 @@ with col2:
         st.markdown('''### Why here? And why now?''', unsafe_allow_html=True)
 
         #chart 2
-        st.image("src/visuals/chart2.png", width=600)
+        st.image("src/visuals/chart2.png", use_column_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
     #michigan
