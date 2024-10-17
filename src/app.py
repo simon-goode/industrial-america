@@ -76,7 +76,7 @@ with col2:
         st.markdown("""
             Hi there, I'm Simon Goode, a student at Brandeis University studying Applied Math and Economics.
             
-            [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)\t
+            [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)  
             [GitHub](https://github.com/simon-goode/industrial-america)
                     """)
         
