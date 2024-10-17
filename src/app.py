@@ -76,7 +76,7 @@ with col2:
         st.markdown("""
             Hi there, I'm Simon Goode, a student at Brandeis University studying Applied Math and Economics.
             
-            [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)
+            [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)\t
             [GitHub](https://github.com/simon-goode/industrial-america)
                     """)
         
@@ -91,7 +91,7 @@ with col2:
      <textarea name="message" placeholder="Your message here"></textarea>
      <input type="file" class="img_btn" name="Upload Image" accept="image/png, image/jpeg">
      <br>
-     <input type="hidden" name="_next" value="localhost:8501">
+     <input type="hidden" name="_next" value="americanindustryproject.streamlit.app">
      <button type="submit">Send</button>
 </form>
 """
