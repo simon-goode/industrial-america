@@ -58,7 +58,7 @@ with col2:
                     [\[5\]](https://www.bostonglobe.com/2021/01/10/opinion/trump-is-symptom-our-moral-decline-not-cause/)</sup>
                     since 2016 point to Donald Trump being a symptom, more than the cause, of the growing division and recent populist slant in United States politics. 
                     So if it *wasn't* Trump riding down the escalator in 2016 that changed everything, the question is obvious:<br>''', unsafe_allow_html=True)
-        st.markdown('''## Why here? And why now?<br>''', unsafe_allow_html=True)
+        st.markdown('''## Why here? And why now?''', unsafe_allow_html=True)
 
         #chart 2
         st.image("src/visuals/chart2.png", use_column_width=True)
@@ -81,12 +81,12 @@ with col2:
         st.markdown("""
             Hi there, I'm Simon Goode, a student at Brandeis University studying Applied Math and Economics. I grew up outside Boston, Massachusetts, and I have
                     no ties to organized labor in the US, but I've seen overwhelming evidence that the populist dynamics dominating today's political discourse have
-                    roots in the erosion of labor institutions and the collapse of the iron triangle in the Rust Belt, particularly in Michigan.
+                    roots in the erosion of labor institutions and the collapse of the iron triangle in the Rust Belt.
             
             [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)&nbsp;[GitHub](https://github.com/simon-goode/industrial-america)
                     """)
         
-        st.markdown('### Report a bug, fact check me, or just get in touch!:')
+        st.markdown('### Report a bug, fact check me, or just get in touch! ')
 
         contact_form = """
 <form action="https://formsubmit.co/8be1eda9ec4663debabb07417ecc12dc" method="POST" enctype="multipart/form-data">

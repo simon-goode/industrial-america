@@ -11,6 +11,8 @@ Highlighting trends in the Rust Belt and the effect of recent industrial policy 
 [Trump is the Symptom, not the Problem](https://www.carnegiecouncil.org/media/article/trump-is-the-symptom-not-the-problem)  
 [Is Trump a symptom or the cause of the US's bitter political divide?](https://www.thetimes.com/world/us-world/article/is-trump-a-symptom-or-the-cause-of-the-us-s-bitterpolitical-divide-ghrb9pz2b)  
 [Trump is a Symptom of our moral decline, not the cause](https://www.bostonglobe.com/2021/01/10/opinion/trump-is-symptom-our-moral-decline-not-cause/)  
+[The Evolving Politics of the Rust Belt "Union Man"](https://cupblog.org/2023/12/18/the-evolving-politics-of-the-rust-belt-union-manlainey-newman/)  
+
 
 ## data sources
 [MIT Election Lab](https://electionlab.mit.edu/data)  
