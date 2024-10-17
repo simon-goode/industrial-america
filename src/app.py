@@ -33,19 +33,19 @@ with col2:
         with chart1_tab1:
             st.plotly_chart(get_vote_margin(year))
             st.markdown(f"""
-                    How much do swing counties swing? This map shows how blue or red each county of the Rust Belt :blue[voted in the {year} U.S.] election.
+                    How much do swing counties swing? This map shows how far blue or red each county of the Rust Belt :blue[voted in the {year}] election.
         """)
         with chart1_tab2:
             # st.image(f"src/visuals/chart1/{year}.png", use_column_width=True)
             st.plotly_chart(get_vote_margin_diff(year))
             st.markdown("""
-                    How much do swing counties swing? This map shows how blue or red each county of the Rust Belt :red[shifted from the prior] election.
+                    How much do swing counties swing? This map shows how far blue or red each county of the Rust Belt :red[swung from the last] election.
         """)
         #graph blurb    
         st.warning('Play around with the slider. What swing do you see for Obama/McCain in 2008? For Obama/Romney? For Trump/Clinton in 2016?')
         # paragraph 1
-        st.markdown('''These maps starkly highlight the growing urban-rural divide in America: the ruby red counties are numerous sparse expanses,
-                    while the bluest counties are few and separated, in ultra-dense urban hubs. But this division can't explain everything; namely, what happened in 2016.
+        st.markdown('''These maps starkly highlight the growing urban-rural divide in America: the ruby red counties cover large, sparsely populated expanses,
+                    while the bluest counties are fewer and clustered in ultra-dense urban hubs. But this division can't explain everything; namely, what happened in 2016.
                     While Hillary Clinton largely underperformed Barack Obama nationwide, she fell particularly flat in these critical Rust Belt swing states. Trump
                     seemed to capture the loyalty of Midwestern whites, especially with the traditionally progressive demographic of industrial working class men.
                     Despite this, volumes of research<sup>[\[1\]](https://www.institutmontaigne.org/en/expressions/trump-symptom-diseased-american-democracy)
