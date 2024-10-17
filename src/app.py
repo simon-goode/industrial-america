@@ -46,8 +46,8 @@ with col2:
         # paragraph 1
         st.markdown('''These maps starkly highlight the growing urban-rural divide in America: the ruby red counties are numerous sparse expanses,
                     while the bluest counties are few and separated, in ultra-dense urban hubs. But this division can't explain everything; namely, what happened in 2016.
-                    Despite Hillary Clinton largely underperforming Barack Obama nationwide, she fell particularly flat in these critical Rust Belt swing states. Trump
-                    seemed to capture the hearts and minds of Midwestern whites, especially with the traditionally progressive demographic of working class white men.
+                    While Hillary Clinton largely underperformed Barack Obama nationwide, she fell particularly flat in these critical Rust Belt swing states. Trump
+                    seemed to capture the loyalty of Midwestern whites, especially with the traditionally progressive demographic of industrial working class men.
                     Despite this, volumes of research<sup>[\[1\]](https://www.institutmontaigne.org/en/expressions/trump-symptom-diseased-american-democracy)
                     [\[2\]](https://smallwarsjournal.com/jrnl/art/problematic-symptom-donald-j-trump)</sup>and commentary<sup>
                     [\[3\]](https://www.carnegiecouncil.org/media/article/trump-is-the-symptom-not-the-problem)
@@ -76,8 +76,7 @@ with col2:
         st.markdown("""
             Hi there, I'm Simon Goode, a student at Brandeis University studying Applied Math and Economics.
             
-            [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)  
-            [GitHub](https://github.com/simon-goode/industrial-america)
+            [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)     [GitHub](https://github.com/simon-goode/industrial-america)
                     """)
         
         st.markdown('### Report a bug, fact check me, or just get in touch!:')
