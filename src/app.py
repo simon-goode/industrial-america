@@ -77,9 +77,11 @@ with col2:
     # about
     with tab7:
         st.markdown("""
-            Hi there, I'm Simon Goode, a student at Brandeis University studying Applied Math and Economics.
+            Hi there, I'm Simon Goode, a student at Brandeis University studying Applied Math and Economics. I grew up outside Boston, Massachusetts, and I have
+                    no ties to organized labor in the US, but I've seen overwhelming evidence that the populist dynamics dominating today's political discourse have
+                    roots in the erosion of labor institutions and the collapse of the iron triangle in the Rust Belt, particularly in Michigan.
             
-            [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)     [GitHub](https://github.com/simon-goode/industrial-america)
+            [LinkedIn](https://www.linkedin.com/in/simon-goode-25581324a/)&nbsp[GitHub](https://github.com/simon-goode/industrial-america)
                     """)
         
         st.markdown('### Report a bug, fact check me, or just get in touch!:')
