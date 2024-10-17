@@ -60,6 +60,8 @@ with col2:
                     So if it *wasn't* Trump riding down the escalator in 2016 that changed everything, the question is obvious:<br>''', unsafe_allow_html=True)
         st.markdown('''### Why here? And why now?''', unsafe_allow_html=True)
 
+        #chart 2
+        st.image("src/visuals/chart2.png", width=600)
         st.markdown('</div>', unsafe_allow_html=True)
 
     #michigan
