@@ -47,7 +47,7 @@ with col2:
         #graph blurb    
         st.warning('Play around with the slider. What swing do you see for Obama/McCain in 2008? For Obama/Romney? For Trump/Clinton in 2016?')
         # paragraph 1
-        st.markdown('''These maps starkly highlight the growing urban-rural divide in America: the ruby red counties cover large, sparsely populated expanses,
+        st.markdown('''The growing urban-rural divide in America is no secret: the ruby red counties cover large, sparsely populated expanses,
                     while the bluest counties are fewer and clustered in ultra-dense urban hubs. But this division can't explain everything; namely, what happened in 2016.
                     While Hillary Clinton largely underperformed Barack Obama nationwide, she fell particularly flat in these critical Rust Belt swing states. Trump
                     seemed to capture the loyalty of Midwestern whites, especially with the traditionally progressive demographic of industrial working class men.
