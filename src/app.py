@@ -58,7 +58,7 @@ with col2:
                     [\[5\]](https://www.bostonglobe.com/2021/01/10/opinion/trump-is-symptom-our-moral-decline-not-cause/)</sup>
                     since 2016 point to Donald Trump being a symptom, more than the cause, of the growing division and recent populist slant in United States politics. 
                     So if it *wasn't* Trump riding down the escalator in 2016 that changed everything, the question is obvious:<br>''', unsafe_allow_html=True)
-        st.markdown('''### Why here? And why now?''', unsafe_allow_html=True)
+        st.markdown('''### Why here? And why now?<br>''', unsafe_allow_html=True)
 
         #chart 2
         st.image("src/visuals/chart2.png", use_column_width=True)
