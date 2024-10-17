@@ -17,7 +17,7 @@ col1, col2, col3 = st.columns([1, 3, 1])
 with col1:
     st.image("src/visuals/inline_icon.png", width=200)
     st.link_button("Support American Labor", url="https://aflcio.org/relief")
-    st.link_button("Pro-Union Scorecards", url="https://aflcio.org/scorecard")
+    st.link_button("Congressional Scorecards", url="https://aflcio.org/scorecard")
     st.link_button("Made in USA Directory", url="https://www.americanmanufacturing.org/made-in-america/")
 
 with col2:
